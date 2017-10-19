@@ -9,11 +9,11 @@ const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+var mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 1280, height: 768, title: "Netview", autoHideMenuBar: true, frame: false, fullscreenable : true, icon:'img/logoNetview.ico'})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -21,7 +21,6 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   }))
-
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
@@ -30,7 +29,9 @@ function createWindow () {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    mainWindow = null
+    //smainWindow = null
+    mainWindow.setResizable(false)
+    mainWindow.addExtension("Extentions/3.17.0_0/")
   })
 }
 
@@ -38,6 +39,7 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
+
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

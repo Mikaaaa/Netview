@@ -1,19 +1,69 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
-</html>
+    </head>
+    <body>
+      <nav class=" indigo darken-4" style="-webkit-app-region: drag;">
+        <div class="wc-box" style="">
+          <div class="minimize" id="minimize"></div>
+          <div class="maximize" id="maximize"></div>
+          <div class="close" id="close"></div>
+        </div>
+        <div class="nav-wrapper row">
+          <ul class="left col s2 m2 l2 xl2 push-s8 push-m8 push-l8" style="-webkit-app-region:no-drag;">
+            <li><a href="#" style="user-select: none;"><i class="tiny material-icons" id="back">arrow_back</i></a></li>
+            <li><a href="#"><i class="tiny material-icons" id="forward">arrow_forward</i></a></li>
+            <li><a href="#"><i class="tiny material-icons" id="home">home</i></a></li>
+          </ul>
+          <ul>
+          </ul>
+          <div class="input-field col s8 m8 l8 xl8 ">
+            <input id="urlTxt" type="text" class="validate center ">
+            <label for="text" style="text-align: center" id="LblUrl">google.com...</label>
+            <a href="#" class="col s1"><i class="material-icons" id="reload">refresh</i></a>
+            <a href="#" class="col offset-s12"><i class="material-icons" id="add">add</i></a>
+          </div>
+          <ul class="right col s2 m2 l2 xl2 pull-s8 push-m8 push-l8" >
+            <li><div id="menu" href="#"><i class="medium material-icons">menu</i></div></li>
+          </ul>
+          <div class="progress indigo lighten-3" id="ProgressBar" style="display:none">
+            <div class="indeterminate indigo darken-3"></div>
+        </div>
+        </div>
+      </nav>
+
+      <div class="etabs-tabgroup">
+        <div class="etabs-tabs"></div>
+        <div class="etabs-buttons"></div>
+      </div>
+      <div class="etabs-views">
+          <webview class="etabs-view visible" id="starter" src="https://www.google.fr/" tabindex="-1" ></webview>
+      </div>
+      <!-- Modal Structure -->
+      <ul class="dropdown">
+        <li><a href="#"><i class="tiny material-icons">cloud</i>  Connexion</a></li>
+        <li><a href="#"><i class="tiny material-icons">file_download</i>  Téléchagements</a></li>
+        <li><a href="#"><i class="tiny material-icons">history</i>  Historique</a></li>
+        <li><a href="#"><i class="tiny material-icons">stars</i>  Favoris</a></li>
+        <li><a href="#"><i class="tiny material-icons">settings</i>  Paramètres</a></li>
+        <li><a href="#"><i class="tiny material-icons">help</i>  Aide</a></li>
+      </ul>
+
+      </div>
+      <!-- Compiled and minified JavaScript -->
+      <script>window.$ = window.jQuery = require('jquery');</script>
+      <script type="text/javascript" src="./renderer.js"/>
+      <script type="text/javascript" src="./src/script.js"/>
+      <script type="text/javascript">
+      require('materialize-css')
+      </script>
+ </body>
+ </html>

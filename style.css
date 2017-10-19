@@ -1,0 +1,373 @@
+.input-field label {
+     color: #7986cb ;
+     margin-top: -11px;
+   }
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #3f51b5;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #3f51b5 ;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #3f51b5;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #3f51b5;
+}
+/* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #7986cb !important;
+   box-shadow: 0 1px 0 0 #7986cb !important
+ }
+nav i {
+  color: #9fa8da ;
+}
+nav {
+  margin-top:0;
+}
+nav a {
+  user-select: none;
+}
+.wc-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wc-box div {
+  position: absolute  ;
+  float: left;
+  width: 30px;
+  height: 30px;
+  -webkit-app-region: drag;
+}
+.wc-box div:before,
+.wc-box div:after {
+  top: 30%;
+  right: 30%;
+  bottom: 30%;
+  left: 30%;
+  content: " ";
+  position: absolute;
+  border-color: #CCCCCC;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+}
+
+.wc-box .minimize:before {
+  border-bottom-width: 2px;
+}
+
+.wc-box .maximize:before {
+  border-width: 1px 1px 2px 1px;
+}
+
+.wc-box .close:before,
+.wc-box .close:after {
+  bottom: 50%;
+  top: 50%;
+}
+
+.wc-box .close:before {
+  transform: rotate(45deg);
+}
+
+.wc-box .close:after {
+  transform: rotate(-45deg);
+}
+
+.wc-box div:hover {
+  background-color: #CCCCCC;
+}
+
+.wc-box .close:hover {
+  background-color: #E04343;
+}
+
+.wc-box div:hover:after,
+.wc-box div:hover:before {
+  border-color: #333333;
+}
+
+.wc-box .close:hover:after,
+.wc-box .close:hover:before {
+  border-color: #FFFFFF;
+}
+#urlTxt {
+  color: white;
+	background-color: #283593;
+	border-radius: 5px;
+	margin-top: 20px;
+	height: 25px;
+	-webkit-app-region:no-drag;
+}
+#LblUrl {
+  color: #c5cae9;
+}
+#menu {
+  cursor:default;
+	top:10px;
+	right: 32px;
+	padding-right: 5px;
+	position: absolute;
+  	z-index: 10;
+  	-webkit-app-region:no-drag;
+}
+#reload {
+  color: #c5cae9;
+	top:0px;
+	padding-right: 5px;
+	position: absolute;
+  	z-index: 10;
+  	-webkit-app-region:no-drag;
+}
+
+#close {
+	top:0px;
+	right: 5px;
+	padding-right: 5px;
+	position: absolute;
+  	z-index: 10;
+  	-webkit-app-region:no-drag;
+}
+#maximize {
+	top:0px;
+	right: 35px;
+	padding-right: 5px;
+	position: absolute;
+  	z-index: 10;
+  	-webkit-app-region:no-drag;
+}
+#minimize {
+	top:0px;
+	right: 65px;
+	padding-right: 5px;
+	position: absolute;
+	z-index: 10;
+	-webkit-app-region:no-drag;
+}
+#add {
+  user-select: none;
+  color: #c5cae9;
+	top:0px;
+	right: 15px;
+	padding-right: 10px;
+	position: absolute;
+	z-index: 10;
+	-webkit-app-region:no-drag;
+}
+webview {
+	display:inline-flex;
+	position: absolute;
+	width:100%;
+	top : 64px;
+	bottom: 0px;
+}
+#ProgressBar {
+	top: 0px;
+	z-index: 10;
+}
+#tabs {
+  z-index: 10;
+  position: absolute;
+  top: 75px;
+}
+#CloseTab {
+  position: absolute;
+  left: 24px;
+}
+}
+#audioIcon {
+  position: absolute;
+  left: 40px;
+}
+/*
+  sidenav
+
+ */
+ /**************************************************************************
+
+                        The side navigation menu  user
+
+
+ ***************************************************************************/
+ .dropdown {
+  position: absolute;
+  right: 4px;
+  top: 49px;
+  width: 250px;
+  background: #EAEAEA;
+  transition: all 0.25s ease-out;
+  transform: scale(0);
+  transform-origin: 100% 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dropdown li {
+  display: block;
+  width: 100%;
+}
+
+.dropdown li a {
+  width: 100%;
+  padding: 1em 18px;
+  display: inline-block;
+  white-space: pre;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.dropdown li a:hover { background: #CECECE; }
+
+.dropdown:hover ul { transform: scale(1); }
+
+.dropdown.active {
+  transform: scale(1);
+  transition: all 0.25s cubic-bezier(0.5, 1.8, 0.9, 0.8);
+}
+ /******************************************************************************************
+  *   horizontal fab
+  ****************************************************************************************/
+  .container {
+   bottom: 0;
+   position: fixed;
+   margin: 1em;
+   left: 0px;
+ }
+
+ .buttons {
+   box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18),
+               0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+   border-radius: 50%;
+   display: block;
+   width: 56px;
+   height: 56px;
+   margin: 20px auto 0;
+   position: relative;
+   -webkit-transition: all .1s ease-out;
+           transition: all .1s ease-out;
+ }
+
+ .buttons:active,
+ .buttons:focus,
+ .buttons:hover {
+   box-shadow: 0 0 4px rgba(0,0,0,.14),
+     0 4px 8px rgba(0,0,0,.28);
+ }
+
+ .buttons:not(:last-child) {
+   width: 40px;
+   height: 40px;
+   margin: 20px auto 0;
+   opacity: 0;
+   -webkit-transform: translateY(50px);
+       -ms-transform: translateY(50px);
+           transform: translateY(50px);
+ }
+
+ .container:hover
+ .buttons:not(:last-child) {
+   opacity: 1;
+   -webkit-transform: none;
+       -ms-transform: none;
+           transform: none;
+   margin: 15px auto 0;
+ }
+
+ /* Unessential styling for sliding up buttons at differnt speeds */
+
+ .buttons:nth-last-child(1) {
+   -webkit-transition-delay: 25ms;
+           transition-delay: 25ms;
+   background-image: url('https://cbwconline.com/IMG/Share.svg');
+   background-size: contain;
+ }
+
+ .buttons:not(:last-child):nth-last-child(2) {
+   -webkit-transition-delay: 50ms;
+           transition-delay: 20ms;
+   background-image: url('https://cbwconline.com/IMG/Facebook-Flat.png');
+   background-size: contain;
+ }
+
+ .buttons:not(:last-child):nth-last-child(3) {
+   -webkit-transition-delay: 75ms;
+           transition-delay: 40ms;
+   background-image: url('http://www.iconninja.com/files/781/508/961/sign-out-no-deny-delete-close-x-out-icon.svg');
+   background-size: contain;
+ }
+
+ /* Show tooltip content on hover */
+
+ [tooltip]:before {
+   bottom: 25%;
+   font-family: arial;
+   font-weight: 600;
+   border-radius: 2px;
+   background: #585858;
+   color: #fff;
+   content: attr(tooltip);
+   font-size: 12px;
+   visibility: hidden;
+   opacity: 0;
+   padding: 5px 7px;
+   margin-right: 12px;
+   position: absolute;
+   right: 100%;
+   white-space: nowrap;
+ }
+
+ [tooltip]:hover:before,
+ [tooltip]:hover:after {
+   visibility: visible;
+   opacity: 1;
+ }
+ /**
+  *   tabs css
+  */
+  .follow {
+    width: auto;
+    height: 42px;
+    border-radius: 50px;
+    background: #03A9F4;
+    display: block;
+    margin: 10px auto 0;
+    white-space: nowrap;
+    padding: 13px;
+    box-sizing: border-box;
+    color: white;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+    padding-top:10px;
+  }
+  .follow i {
+    margin-right: 20px;
+    -webkit-transition: margin-right 0.2s ease;
+    transition: margin-right 0.2s ease;
+  }
+  .follow:hover {
+    width: 134px;
+  }
+  .follow:hover i {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .follow {
+      margin: 400px auto 0;
+    }
+  }

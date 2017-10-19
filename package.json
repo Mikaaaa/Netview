@@ -1,22 +1,30 @@
 {
-  "name": "electron-quick-start",
+  "name": "search",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "web",
+    "browser"
   ],
-  "author": "GitHub",
+  "author": "mikael.quillet@gmail.com",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  },
+  "browser": {
+    "jquery" : "./node_modules/jquery/bin/jquery.min.js",
+    "jQuery" : "./node_modules/jquery/bin/jquery.min.js",
+    "materialize": "./node_modules/materialize-css/bin/materialize.js",
+    "hammerjs" :"./node_modules/hammerjs/src/hammerjs.js",
+    "jquery-sidebar" :"./node_modules/jquery-sidebar/src/jquery-sidebar.js"
   }
 }
