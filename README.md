@@ -1,45 +1,66 @@
-# electron-quick-start
+# electron-Webbrowser
 
-**Clone and run for a quick way to see Electron in action.**
+**Netview**
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+this is a web browser build within every functionality, for watch, listening and share on the web.
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
+A lot of functionality:
 
-A basic Electron application needs just these files:
+- `shared link` - share your link with your friend on your local network
+- `video overlay` - watch your streamer in a window overlay and make other things
+- `sync` - you can sync your fav, with a account
+- `personalize` - ... your web browser with new color
+- `extension` - use extension to increase your browser
+- `inspect` - for curious web users
+- `web developper tool` - http server, color pic etc..
+- `laught` - with few easter eggs
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
+## work in progress
 
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
+Your favorite browser is on the way, 
+keep calm and read this list to know when you dream will become reality:
 
-## To Use
+- `webview` - this is must if you want a webbrowser
+- `user interface` - menu, address bar, back ans forward working
+- `tabs` - create, switch and kill tab
+- `fullscreen` - ui interface show off in fullscreen mode
+- `progress bar` - progress bar show on only when page is loading
+- 
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+**actualy bug**
+- `user interface` - buttons show off when size decrease under 900px, focus on back button
+- `extension` - first added extension doesn't work
+- `tabs` - the first tab lost access after a opened new tab
 
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+# Navigateur sous electron
 
-## Resources for Learning Electron
+**Netview**
 
-- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
-- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+C'est un navigateur avec un maximum de fonctionnalités, pour regarder, écouter et partager sur le net.
 
-## License
+Beacoup de fonctionalités:
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+- `partage de lien` - partagez vos liens avec vos amis sur le réseau local
+- `video overlay` - regardez votre streamer favori sur un fenètre spécifique et faite autre choses en même temps
+- `sync` - sauvegardez vos favoris avec un compte
+- `personalise` - ... ton navigateur avec de nouvelles couleurs
+- `extension` - utilise des extensions
+- `inspecter` - pour les utilisateurs web curieux
+- `outils developpeur web` - http server, pipette, etc..
+- `rit` - avec plusieur ester eggs
+
+## developpement en cours
+
+Ton navifagteur favori est sur la voie, 
+reste cool et lis pour savoir dans combien de temps ton rêve deviendra réalité:
+
+- `webview` - c'est la base pour regarder du contenu web
+- `interface utilisateur` - menu, barre d'addresse, retour et suivant fonctionne
+- `onglets` - créer, passe d'un onglets a l'autre et fermeture d'onglet
+- 
+
+**actualy bug**
+- `interface utilisateur` - les boutons disparaisse quand la largeur passe en dessous de 900px, focus sur le bouton retour
+- `extension` - la première extension chargée ne fonctionne pas
+- `onglets` - le premier onglet devien inaccessible quand on ouvre un second onglet
