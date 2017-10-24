@@ -13,7 +13,6 @@ A lot of functionality:
 - `extension` - use extension to increase your browser
 - `inspect` - for curious web users
 - `web developper tool` - http server, color pic etc..
-- `laught` - with few easter eggs
 
 ## work in progress
 
@@ -52,7 +51,6 @@ Beacoup de fonctionalités:
 - `extension` - utilise des extensions
 - `inspecter` - pour les utilisateurs web curieux
 - `outils developpeur web` - http server, pipette, etc..
-- `rit` - avec plusieur ester eggs
 
 ## developpement en cours
 
