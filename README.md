@@ -27,7 +27,7 @@ keep calm and read this list to know when you dream will become reality:
 - `progress bar` - progress bar show on only when page is loading
 
 
-**actualy bug**
+**actualy bugs**
 - `user interface` - buttons show off when size decrease under 900px, focus on back button
 - `extension` - first added extension doesn't work
 - `tabs` - the first tab lost access after a opened new tab
@@ -56,7 +56,7 @@ Beacoup de fonctionalités:
 
 ## developpement en cours
 
-Ton navifagteur favori est sur la voie, 
+Ton navigateur favori est sur la voie, 
 reste cool et lis pour savoir dans combien de temps ton rêve deviendra réalité:
 
 - `webview` - c'est la base pour regarder du contenu web
@@ -66,7 +66,7 @@ reste cool et lis pour savoir dans combien de temps ton rêve deviendra réalit�
 - `barre de chargement` - s'affiche unique quand la page web charge
 
 
-**actualy bug**
+**bugs actuel**
 - `interface utilisateur` - les boutons disparaisse quand la largeur passe en dessous de 900px, focus sur le bouton retour
 - `extension` - la première extension chargée ne fonctionne pas
 - `onglets` - le premier onglet devien inaccessible quand on ouvre un second onglet
