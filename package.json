@@ -1,7 +1,7 @@
 {
   "name": "search",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A web browser Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
