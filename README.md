@@ -25,12 +25,16 @@ keep calm and read this list to know when you dream will become reality:
 - `tabs` - create, switch and kill tab
 - `fullscreen` - ui interface show off in fullscreen mode
 - `progress bar` - progress bar show on only when page is loading
-- 
+
 
 **actualy bug**
 - `user interface` - buttons show off when size decrease under 900px, focus on back button
 - `extension` - first added extension doesn't work
 - `tabs` - the first tab lost access after a opened new tab
+
+
+
+
 
 
 # Navigateur sous electron
