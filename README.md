@@ -62,6 +62,8 @@ reste cool et lis pour savoir dans combien de temps ton rêve deviendra réalit�
 - `webview` - c'est la base pour regarder du contenu web
 - `interface utilisateur` - menu, barre d'addresse, retour et suivant fonctionne
 - `onglets` - créer, passe d'un onglets a l'autre et fermeture d'onglet
+- `plein écran` - l'interface utilisateur se cache correctement quand la page passe en plein écran
+- `barre de chargement` - s'affiche unique quand la page web charge
 
 
 **actualy bug**
